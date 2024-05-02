@@ -14,7 +14,7 @@ const Services = () => {
      <div className='container'>
         <Heading 
         title="Generative AI made for creators."
-        text="Brainwave unlocks the potential of AI-powered applications"
+        text="Infinity unlocks the potential of AI-powered applications"
         />
         <div className='realtive'>
         <div className='relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-5 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]'>
@@ -30,7 +30,7 @@ const Services = () => {
             <div className="realtive z-1 max-w-[17rem] ml-auto">
             <h4 className="h4 mb-4">Smartest AI</h4>
             <p className="body-2 mb-[3rem] text-n-4">
-                Brainwave unlocks the potential of AI-powered applications
+                Infinity unlocks the potential of AI-powered applications
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
@@ -65,7 +65,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="absolute top-8 right-8 max-w-[17.5rem] py-6 px-8 bg-black rounded-t-xl rounded-bl-xl font-code text-base lg:top-16 lg:right-[8.75rem] lg:max-w-[17.5rem]">
-                Hey Brainwave, enhance this photo
+                Hey Infinity, enhance this photo
                 <ChatBubbleWing className="absolute left-full bottom-0" />
                 </div>
             </div>

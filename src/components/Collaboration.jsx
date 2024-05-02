@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from './Section'
 import { collabApps, collabContent, collabText } from "../constants";
-import { brainwaveSymbol, check } from "../assets";
+import { InfinityLogosymboll, check } from "../assets";
 import Button from './Button';
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 const Collaboration = () => {
@@ -37,7 +37,7 @@ const Collaboration = () => {
                 <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                     <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                     <img
-                    src={brainwaveSymbol}
+                    src={InfinityLogosymboll}
                     width={48}
                     height={48}
                     alt="brainwave"
