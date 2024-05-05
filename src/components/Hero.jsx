@@ -3,9 +3,12 @@ import Button from "./Button";
 import { useRef } from "react";
 import { curve, herobgrobot, robot} from "../assets";
 import Generating from "./Generating";
-import { BackgroundCircles } from "./design/Header";
+import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import Companylogos from "./Companylogos";
-// import { ScrollParallax } from "react-just-parallax";
+import Notification from "./Notification";
+import { heroIcons } from "../constants";
+
+import { ScrollParallax } from "react-just-parallax";
 
 const Hero = () => {
     const parallaxRef = useRef(null);
@@ -39,7 +42,7 @@ const Hero = () => {
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
-        <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient" >
+        <div className="relative z-1 p-0.5 rounded-2xl bg-n-2" >
             <div className=" relative bg-n-8 rounded-[1rem]">
                 <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]"/>
                 <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
@@ -52,7 +55,7 @@ const Hero = () => {
                 />
                 
                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
-                {/* <ScrollParallax isAbsolutelyPositioned>
+                <ScrollParallax isAbsolutelyPositioned>
                   <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
@@ -60,9 +63,16 @@ const Hero = () => {
                       </li>
                     ))}
                   </ul>
-                </ScrollParallax> */}
+                </ScrollParallax>
+                <ScrollParallax isAbsolutelyPositioned>
+                  <Notification
+                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
+                    title="Code generation"
+                  />
+                </ScrollParallax>
                 </div>
             </div>
+            <Gradient />
         </div>
         <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
@@ -77,7 +87,7 @@ const Hero = () => {
         </div>
         <Companylogos className="hidden relative z-10 mt-20 lg:block" />
         </div>
-      
+        <BottomLine />
     </Section>
   )
 }
